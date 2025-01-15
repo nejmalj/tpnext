@@ -1,10 +1,3 @@
-POST http://localhost:3000/api/
-Content-Type: application/json
-
-{
-  "titi": "Nejma"
-}
-
 ###
 POST http://localhost:3000/api/ordinateur/cartemere/
 Content-Type: application/json
