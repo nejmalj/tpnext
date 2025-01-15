@@ -52,3 +52,6 @@ Content-Type: application/json
   "cartemereId": 1,
   "processeurId": 1
 }
+
+###
+GET http://localhost:3000/api/ordinateur/processeur/1

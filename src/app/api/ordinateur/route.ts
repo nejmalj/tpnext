@@ -7,9 +7,21 @@ export const POST = async (request: NextRequest) => {
     const postOrdi = await prisma.ordinateur.create({
         data: {
             name,
-            ramId,
-            cartemereId,
-            processeurId
+            ram: {
+                connect: {
+                    id: ramId,
+                }
+            },
+            cartemere: {
+                connect: {
+                    id: cartemereId,
+                }
+            },
+            processeur: {
+                connect: {
+                    id: processeurId,
+                }
+            },
         }
     });
 
