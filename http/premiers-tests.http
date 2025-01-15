@@ -1,0 +1,54 @@
+POST http://localhost:3000/api/
+Content-Type: application/json
+
+{
+  "titi": "Nejma"
+}
+
+###
+GET http://localhost:3000/api/toto/1
+
+###
+POST http://localhost:3000/api/toto
+Content-Type: application/json
+
+{
+  "title": "First title",
+  "content": "First content",
+  "email": "test@test.fr"
+}
+
+###
+POST http://localhost:3000/api/ordinateur/cartemere/
+Content-Type: application/json
+
+{
+  "name": "Carte mère test"
+}
+
+###
+POST http://localhost:3000/api/ordinateur/ram/
+Content-Type: application/json
+
+{
+  "name": "Ram test"
+}
+
+###
+POST http://localhost:3000/api/ordinateur/processeur/
+Content-Type: application/json
+
+{
+  "name": "Processeur test"
+}
+
+###
+POST http://localhost:3000/api/ordinateur/
+Content-Type: application/json
+
+{
+  "name": "Ordinateur test",
+  "ramId": 1,
+  "cartemereId": 1,
+  "processeurId": 1
+}
