@@ -14,15 +14,26 @@ export const GET = async (request: NextRequest,
     return NextResponse.json(cms);
 }
 
-export const UPDATE = async (request: NextRequest,
+export const PUT = async (request: NextRequest,
                              { params: { id } }: { params: { id:string } } ) => {
+
     const cms = await prisma.carteMere.update({
         where: {
             id: parseInt(id)
         },
         data: {
-            name: "Test"
+            name: `Test`
         }
     })
     return NextResponse.json(cms);
                              }
+
+export const DELETE = async (request: NextRequest,
+                             { params: { id } }: { params: { id:string } } ) => {
+    const cms = await prisma.carteMere.delete({
+        where: {
+            id: parseInt(id)
+        }
+    })
+    return NextResponse.json(cms);
+};
