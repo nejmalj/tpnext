@@ -6,19 +6,6 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/toto/1
-
-###
-POST http://localhost:3000/api/toto
-Content-Type: application/json
-
-{
-  "title": "First title",
-  "content": "First content",
-  "email": "test@test.fr"
-}
-
-###
 POST http://localhost:3000/api/ordinateur/cartemere/
 Content-Type: application/json
 
