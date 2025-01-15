@@ -13,3 +13,16 @@ export const GET = async (request: NextRequest,
     })
     return NextResponse.json(cms);
 }
+
+export const UPDATE = async (request: NextRequest,
+                             { params: { id } }: { params: { id:string } } ) => {
+    const cms = await prisma.carteMere.update({
+        where: {
+            id: parseInt(id)
+        },
+        data: {
+            name: "Test"
+        }
+    })
+    return NextResponse.json(cms);
+                             }

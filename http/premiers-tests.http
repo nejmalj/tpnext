@@ -54,4 +54,6 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/ordinateur/processeur/1
+UPDATE http://localhost:3000/api/cartemere/1
+
+###
