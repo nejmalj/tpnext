@@ -40,4 +40,4 @@ DELETE http://localhost:3000/api/ordinateur/cartemere/1
 PUT http://localhost:3000/api/ordinateur/cartemere/1
 
 ###
-GET http://localhost:3000/api/ordinateur
+GET https://tpnext-3il2.vercel.app/api/ordinateur
